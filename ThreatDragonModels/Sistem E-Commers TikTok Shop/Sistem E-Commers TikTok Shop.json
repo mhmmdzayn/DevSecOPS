@@ -20,9 +20,910 @@
         "name": "Muhammad Fathir Lubis"
       }
     ],
-    "diagrams": [],
-    "diagramTop": 0,
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Diagram STRIDE TikTok Shop",
+        "diagramType": "STRIDE",
+        "placeholder": "Deskripsi diagram STRIDE TikTok Shop",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [
+          {
+            "position": {
+              "x": 99.9999999999975,
+              "y": 160.00000000000364
+            },
+            "size": {
+              "width": 270,
+              "height": 320
+            },
+            "attrs": {
+              "label": {
+                "text": "internet"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "b66f88d0-c9ff-4f84-9feb-32cc56ee4c3b",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "5f05e876-8d23-4b24-94e5-e2dab56c185f",
+                "4f73f105-7f53-405f-9d25-df73e85ccc22"
+              ],
+              "containedElements": [
+                "e3592f35-6d28-4116-9656-9ca3e99a97ef",
+                "40a14794-23b2-4436-8078-986b471b340d",
+                "c97fa33d-6272-454f-b667-b819da36f226"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 569.9999999999973,
+              "y": 140.0000000000041
+            },
+            "size": {
+              "width": 830,
+              "height": 460
+            },
+            "attrs": {
+              "label": {
+                "text": "TIKTOK INTERNAL NETWORK"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "8110a013-026a-440c-bf05-88702c1ea43a",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TIKTOK INTERNAL NETWORK",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "a439fb1b-12ad-4e36-800b-ed17e1ccc2f5",
+                "01175fed-5416-4e87-b8c2-25ab540590ec",
+                "ba592b98-5935-4f26-a7db-ed013d05aa61",
+                "10df7c95-8cc1-4672-8424-9b560663bfbb",
+                "5f05e876-8d23-4b24-94e5-e2dab56c185f",
+                "4f73f105-7f53-405f-9d25-df73e85ccc22"
+              ],
+              "containedElements": [
+                "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
+                "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+                "c34a9252-a25a-48aa-80ac-38df9d5cfec8"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1460,
+              "y": 130
+            },
+            "size": {
+              "width": 270,
+              "height": 240
+            },
+            "attrs": {
+              "label": {
+                "text": "Database Cluster"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "c1b76107-bf73-4d51-abdf-6e0c42aa6e33",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Database Cluster",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "ba592b98-5935-4f26-a7db-ed013d05aa61",
+                "10df7c95-8cc1-4672-8424-9b560663bfbb"
+              ],
+              "containedElements": [
+                "cb1aaccf-3cbb-4305-b8af-a3aadbf18a1f",
+                "58405958-a81d-45a4-8320-b226245a88d6"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 160,
+              "y": 220
+            },
+            "size": {
+              "width": 150,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "TikTok App (Buyer)"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 0,
+            "id": "e3592f35-6d28-4116-9656-9ca3e99a97ef",
+            "data": {
+              "type": "tm.Actor",
+              "name": "TikTok App (Buyer)",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "ea3efb42-5f26-4c5c-aada-b6d69c1d3205",
+                  "title": "Spoofing of Buyer Identity",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Attacker menyamar sebagai buyer sah untuk melakukan transaksi, menggunakan koin digital, atau mengirim gift lewat credential curian.",
+                  "mitigation": "MFA, deteksi anomali login (device/IP baru), dan verifikasi PIN untuk setiap transaksi finansial.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 160,
+              "y": 302
+            },
+            "size": {
+              "width": 150,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Seller/Creator Center"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "id": "40a14794-23b2-4436-8078-986b471b340d",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Seller/Creator Center",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "2fce94d0-92a8-49a3-b8c8-81391c40ec8d",
+                  "title": "Spoofing of Seller/Creator Identity",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Spoofing",
+                  "description": "Attacker menyamar sebagai seller/kreator untuk mencairkan komisi afiliasi, memanipulasi etalase, atau membajak live stream.",
+                  "mitigation": "MFA wajib untuk akun seller/kreator, IP whitelisting untuk pencairan dana, session timeout pendek.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 160,
+              "y": 380
+            },
+            "size": {
+              "width": 150,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Payment & E-Wallet"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "id": "c97fa33d-6272-454f-b667-b819da36f226",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Payment & E-Wallet",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "4f0078f7-e149-4694-81d6-dd793a332790",
+                  "title": "Repudiation of Payment Transaction",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "E-Wallet atau attacker menyangkal transaksi karena bukti transaksi flash sale tidak diverifikasi dengan kuat.",
+                  "mitigation": "Simpan signed transaction log secara immutable sebagai bukti non-repudiation.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14
+                }
+              ],
+              "threatFrequency": {
+                "repudiation": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 610,
+              "y": 190
+            },
+            "size": {
+              "width": 170,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "Frontend & Player"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 3,
+            "id": "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
+            "data": {
+              "type": "tm.Process",
+              "name": "Frontend & Player",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "fbfba94a-a402-4833-807e-d9213eba6fe2",
+                  "title": "Tampering of Client-Side Script",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attacker memodifikasi kode JS player atau etalase untuk memanipulasi voucher, harga flash sale, atau inject bot klik afiliasi.",
+                  "mitigation": "Terapkan CSP, SRI untuk script eksternal, obfuscation, dan validasi ulang harga/voucher di sisi server.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 882,
+              "y": 290
+            },
+            "size": {
+              "width": 110,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Core API & Live Service"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 4,
+            "id": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+            "data": {
+              "type": "tm.Process",
+              "name": "Core API & Live Service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "aee9ca2b-5b93-448d-9618-1c278e314c2e",
+                  "title": "Elevation of Privilege via Broken Access Control",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Elevation of privilege",
+                  "description": "Viewer biasa bisa akses endpoint kreator untuk mengubah etalase toko karena validasi token JWT tidak memeriksa role secara ketat.",
+                  "mitigation": "RBAC ketat di setiap endpoint API, validasi token JWT menyeluruh, audit permission berkala.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15
+                },
+                {
+                  "id": "8ae394f0-40c4-47de-a837-52541b5b6a30",
+                  "title": "Denial of Service via Live Chat Flooding",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Attacker membanjiri API dengan request checkout palsu atau spam chat live stream sehingga server down saat flash sale.",
+                  "mitigation": "Dynamic Rate limiting, CAPTCHA untuk checkout masif, request throttling, WAF & Anti-DDoS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16
+                }
+              ],
+              "threatFrequency": {
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 730,
+              "y": 460
+            },
+            "size": {
+              "width": 110,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Notification Service"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 5,
+            "id": "c34a9252-a25a-48aa-80ac-38df9d5cfec8",
+            "data": {
+              "type": "tm.Process",
+              "name": "Notification Service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "22b7d8bf-929b-4007-aceb-97a650f72d3f",
+                  "title": "Spoofing of Notification Origin",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attacker mengirim notifikasi palsu seolah-olah dari TikTok Shop untuk phishing minta re-login atau update payment info.",
+                  "mitigation": "Terapkan In-App Notification terenkripsi, SPF, DKIM, dan DMARC pada domain pengirim email.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 1535,
+              "y": 180
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Relational DB"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 6,
+            "id": "cb1aaccf-3cbb-4305-b8af-a3aadbf18a1f",
+            "data": {
+              "type": "tm.Store",
+              "name": "Relational DB",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "29a1d08f-a50f-4d11-9b34-309d82e88350",
+                  "title": "Information Disclosure via SQL Injection",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif (user, transaksi flash sale) bocor lewat SQL Injection karena query tidak di-parameterize.",
+                  "mitigation": "Prepared statements/ORM, least privilege DB user, enkripsi data at-rest.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17
+                }
+              ],
+              "threatFrequency": {
+                "informationDisclosure": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 1535,
+              "y": 262
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Redis Cache"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 8,
+            "id": "58405958-a81d-45a4-8320-b226245a88d6",
+            "data": {
+              "type": "tm.Store",
+              "name": "Redis Cache",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "20feef9b-1f0b-4917-a648-a14d070efd79",
+                  "title": "Denial of Service via Cache Flooding",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Attacker membanjiri Redis dengan request session/cache palsu sehingga memory habis dan layanan live stream freeze.",
+                  "mitigation": "Max memory policy + eviction policy, koneksi Redis dibatasi hanya dari internal network VPC.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18
+                }
+              ],
+              "threatFrequency": {
+                "denialOfService": 1
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS View/Buy",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "4dcd74b8-241c-4997-8c4b-8afc461bcd08",
+                  "title": "Information Disclosure via Weak Encryption",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data login dan checkout bisa disadap kalau HTTPS di-downgrade atau cipher yang dipakai lemah.",
+                  "mitigation": "Paksa HTTPS dengan HSTS header, disable cipher lemah, TLS 1.3 pinning di Mobile App.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24
+                }
+              ],
+              "threatFrequency": {
+                "informationDisclosure": 1
+              }
+            },
+            "labels": [
+              "HTTPS View/Buy"
+            ],
+            "id": "a439fb1b-12ad-4e36-800b-ed17e1ccc2f5",
+            "source": {
+              "x": 310,
+              "y": 250
+            },
+            "target": {
+              "cell": "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS Kelola Etalase",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "labels": [
+              "HTTPS Kelola Etalase"
+            ],
+            "id": "01175fed-5416-4e87-b8c2-25ab540590ec",
+            "source": {
+              "x": 310,
+              "y": 330
+            },
+            "target": {
+              "cell": "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Order / Gift Confirmation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "625d6091-d451-42cf-8214-d124dc1fd07b",
+                  "title": "Tampering of Confirmation Data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Data konfirmasi (jumlah koin, pesanan) dimodifikasi sebelum dikirimkan sistem notifikasi internal.",
+                  "mitigation": "Validasi integritas payload di sisi API sebelum diteruskan, gunakan message queue signing.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1
+              }
+            },
+            "labels": [
+              "Order / Gift Confirmation"
+            ],
+            "id": "1a930de9-b48a-4bf5-bd7a-9a99f32edcff",
+            "source": {
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "88e22a52-33cb-49bb-9609-7f13f193ed1d"
+            },
+            "target": {
+              "cell": "c34a9252-a25a-48aa-80ac-38df9d5cfec8",
+              "port": "486694a8-fd6c-4c2d-a558-ba09208ea505"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Query / Transaction Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "c9491ba3-7747-4c53-8ea1-7c0e5e10d662",
+                  "title": "Information Disclosure via Unencrypted Channel",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data transaksi bocor saat transit ke DB karena tidak dienkripsi.",
+                  "mitigation": "Gunakan TLS untuk koneksi antar microservices dan DB, isolasi VPC.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20
+                }
+              ],
+              "threatFrequency": {
+                "informationDisclosure": 1
+              }
+            },
+            "labels": [
+              "Query / Transaction Data"
+            ],
+            "id": "ba592b98-5935-4f26-a7db-ed013d05aa61",
+            "source": {
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "486694a8-fd6c-4c2d-a558-ba09208ea505"
+            },
+            "target": {
+              "cell": "cb1aaccf-3cbb-4305-b8af-a3aadbf18a1f",
+              "port": "4331e181-4403-46c8-bd09-30c7f77a0c6b"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Session / Live Cache Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "labels": [
+              "Session / Live Cache Data"
+            ],
+            "id": "10df7c95-8cc1-4672-8424-9b560663bfbb",
+            "source": {
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "486694a8-fd6c-4c2d-a558-ba09208ea505"
+            },
+            "target": {
+              "cell": "58405958-a81d-45a4-8320-b226245a88d6",
+              "port": "4331e181-4403-46c8-bd09-30c7f77a0c6b"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Callback",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "892ef95b-56e3-442f-9fd7-8060cdb6315c",
+                  "title": "Tampering of Callback Data",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "Callback E-Wallet bisa dimanipulasi agar transaksi gagal terlihat sukses, mengelabui sistem pengiriman.",
+                  "mitigation": "Verifikasi signature/HMAC dari payment gateway, cross-check status dengan endpoint gateway.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1
+              }
+            },
+            "labels": [
+              "Payment Callback"
+            ],
+            "id": "5f05e876-8d23-4b24-94e5-e2dab56c185f",
+            "source": {
+              "cell": "c97fa33d-6272-454f-b667-b819da36f226",
+              "port": "bfa61d37-75f8-44cd-a79f-8464d7602f9b"
+            },
+            "target": {
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "labels": [
+              "Payment Request"
+            ],
+            "id": "4f73f105-7f53-405f-9d25-df73e85ccc22",
+            "source": {
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
+            },
+            "target": {
+              "cell": "c97fa33d-6272-454f-b667-b819da36f226",
+              "port": "e494cd5e-f52d-4c41-8eea-401cb3a84aee"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "API Request [HTTPS/JWT]",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "936f3ef2-b233-4a95-8cd6-c2e70811ffc1",
+                  "title": "Tampering of Payload in Transit",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Modifikasi request (seperti merubah ID voucher diskon) jika TLS tidak digunakan atau JWT dimanipulasi.",
+                  "mitigation": "Validasi signature JWT, pastikan TLS aktif, lakukan schema validation di backend.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1
+              }
+            },
+            "labels": [
+              "API Request [HTTPS/JWT]"
+            ],
+            "id": "0a8a902e-f06b-4611-ad93-8f3c3955b8bf",
+            "source": {
+              "cell": "9ad0140e-d900-4937-bbcf-e6a395d7c4df",
+              "port": "88e22a52-33cb-49bb-9609-7f13f193ed1d"
+            },
+            "target": {
+              "cell": "f58cd008-d0bc-47ae-b444-b0a3223d294a",
+              "port": "7c76b45e-6ae0-4dfb-9fb8-bcdcbd34e524"
+            }
+          }
+        ],
+        "description": "Mengembangkan aplikasi manajemen toko online dan social commerce"
+      }
+    ],
+    "diagramTop": 1,
     "reviewer": "April Rustin, S.Komp., M.T.",
-    "threatTop": 0
+    "threatTop": 25
   }
 }
