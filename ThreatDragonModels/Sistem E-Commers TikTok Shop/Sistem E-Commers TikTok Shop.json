@@ -1,0 +1,28 @@
+{
+  "version": "2.6.2",
+  "release_version": "",
+  "released_at": "",
+  "summary": {
+    "title": "Sistem E-Commers TikTok Shop",
+    "owner": "Muhammad Zein",
+    "description": "Sistem TikTok Shop ini adalah aplikasi e-commerce yang dilengkapi fitur live streaming. Sistem ini berfungsi untuk menangani proses jual-beli antara pembeli dan kreator secara langsung, mulai dari manajemen produk, checkout, hingga sinkronisasi pembayaran.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Muhammad Zein"
+      },
+      {
+        "name": "Muhammad Bintang Siregar"
+      },
+      {
+        "name": "Muhammad Fathir Lubis"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "April Rustin, S.Komp., M.T.",
+    "threatTop": 0
+  }
+}
